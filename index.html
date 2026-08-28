@@ -1,995 +1,755 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-:root {
+    <title>Diniya Skariachan | Software & Technical Support</title>
 
-    --black: #0b0b0b;
+    <meta
+        name="description"
+        content="Diniya Skariachan - Technical Support, DevOps and Software professional."
+    >
 
-    --white: #ffffff;
+    <link rel="stylesheet" href="index.css">
+</head>
 
-    --off-white: #f6f6f4;
+<body>
 
-    --text: #171717;
+    <!-- ================= NAVIGATION ================= -->
 
-    --muted: #707070;
+    <header class="header">
 
-    --border: #ddddda;
+        <div class="container nav">
 
-    --red: #e10600;
+            <a href="#home" class="logo">
+                Diniya<span>.</span>
+            </a>
 
-}
+            <nav>
 
+                <a href="#about">About</a>
 
-* {
+                <a href="#experience">Experience</a>
 
-    margin: 0;
+                <a href="#skills">Skills</a>
 
-    padding: 0;
+                <a href="#projects">Projects</a>
 
-    box-sizing: border-box;
+                <a href="#certifications">Certifications</a>
 
-}
+                <a href="#contact">Contact</a>
 
+            </nav>
 
-html {
+        </div>
 
-    scroll-behavior: smooth;
+    </header>
 
-}
 
+    <main>
 
-body {
 
-    font-family: "Inter", sans-serif;
+        <!-- ================= HERO ================= -->
 
-    color: var(--text);
+        <section class="hero" id="home">
 
-    background: var(--white);
+            <div class="container hero-content">
 
-    line-height: 1.6;
+                <p class="small-heading">
+                    SOFTWARE • TECHNICAL SUPPORT • DEVOPS
+                </p>
 
-}
+                <h1>
+                    Hi, I'm
+                    <span>Diniya Skariachan.</span>
+                </h1>
 
+                <p class="hero-description">
 
-a {
+                    Computer Science Engineering graduate interested in
+                    software development, technical support, DevOps and
+                    IT operations.
 
-    color: inherit;
+                </p>
 
-    text-decoration: none;
+                <div class="hero-buttons">
 
-}
+                    <a href="#experience" class="button">
+                        View Experience
+                    </a>
 
+                    <a href="#projects" class="button button-outline">
+                        View Projects
+                    </a>
 
-.container {
+                </div>
 
-    width: min(1120px, 88%);
+            </div>
 
-    margin: auto;
+        </section>
 
-}
 
+        <!-- ================= ABOUT ================= -->
 
-/* ================= NAVIGATION ================= */
+        <section class="section" id="about">
 
-.header {
+            <div class="container">
 
-    position: fixed;
+                <p class="section-label">
+                    01 — ABOUT
+                </p>
 
-    top: 0;
+                <div class="about-grid">
 
-    left: 0;
+                    <h2>
+                        Building reliable
+                        <span>technology solutions.</span>
+                    </h2>
 
-    width: 100%;
+                    <div class="about-text">
 
-    height: 72px;
+                        <p>
+                            I am a Computer Science Engineering graduate
+                            with an interest in technical support, software
+                            development, DevOps and IT operations.
+                        </p>
 
-    background: rgba(255,255,255,.94);
+                        <p>
+                            I enjoy troubleshooting technical problems,
+                            understanding software systems and developing
+                            practical solutions.
+                        </p>
 
-    backdrop-filter: blur(10px);
+                        <p>
+                            My experience includes working with Python,
+                            SQL, web technologies, machine learning,
+                            Git and software development tools.
+                        </p>
 
-    border-bottom: 1px solid #eeeeee;
+                    </div>
 
-    z-index: 1000;
+                </div>
 
-}
+            </div>
 
+        </section>
 
-.nav {
 
-    height: 100%;
+        <!-- ================= EXPERIENCE ================= -->
 
-    display: flex;
+        <section class="section section-light" id="experience">
 
-    align-items: center;
+            <div class="container">
 
-    justify-content: space-between;
+                <p class="section-label">
+                    02 — EXPERIENCE
+                </p>
 
-}
+                <h2 class="section-title">
+                    Work Experience
+                </h2>
 
 
-.logo {
+                <div class="experience-list">
 
-    font-size: 1.4rem;
 
-    font-weight: 700;
+                    <!-- EXPERIENCE 1 -->
 
-    letter-spacing: -1px;
+                    <article class="experience">
 
-}
+                        <div class="experience-date">
+                            CURRENT
+                        </div>
 
+                        <div>
 
-.logo span {
+                            <h3>
+                                Robotics Executive Trainee
+                            </h3>
 
-    color: var(--red);
+                            <h4>
+                                Star Innovators
+                            </h4>
 
-}
+                            <p>
+                                Technology-focused training and operational
+                                experience involving software environments,
+                                system setup, technical workflows and
+                                troubleshooting.
+                            </p>
 
+                            <div class="tags">
 
-nav {
+                                <span>Technical Support</span>
 
-    display: flex;
+                                <span>Software</span>
 
-    gap: 25px;
+                                <span>Operations</span>
 
-}
+                                <span>Troubleshooting</span>
 
+                            </div>
 
-nav a {
+                        </div>
 
-    font-size: .75rem;
+                    </article>
 
-    color: var(--muted);
 
-    transition: .2s;
+                    <!-- EXPERIENCE 2 -->
 
-}
+                    <article class="experience">
 
+                        <div class="experience-date">
+                            INTERNSHIP
+                        </div>
 
-nav a:hover {
+                        <div>
 
-    color: var(--text);
+                            <h3>
+                                Research & Development Intern
+                            </h3>
 
-}
+                            <h4>
+                                Extem
+                            </h4>
 
+                            <p>
+                                Worked on research and development activities
+                                with exposure to technology-focused problem
+                                solving and software-related tasks.
+                            </p>
 
-nav a::after {
+                            <div class="tags">
 
-    content: "";
+                                <span>Research</span>
 
-    display: block;
+                                <span>Development</span>
 
-    height: 1px;
+                                <span>Problem Solving</span>
 
-    width: 0;
+                            </div>
 
-    margin-top: 3px;
+                        </div>
 
-    background: var(--red);
+                    </article>
 
-    transition: .2s;
 
-}
+                </div>
 
+            </div>
 
-nav a:hover::after {
+        </section>
 
-    width: 100%;
 
-}
+        <!-- ================= SKILLS ================= -->
 
+        <section class="section" id="skills">
 
-/* ================= HERO ================= */
+            <div class="container">
 
-.hero {
+                <p class="section-label">
+                    03 — SKILLS
+                </p>
 
-    min-height: 100vh;
+                <h2 class="section-title">
+                    Technical Skills
+                </h2>
 
-    display: flex;
 
-    align-items: center;
+                <div class="skills-grid">
 
-    padding-top: 72px;
 
-    position: relative;
+                    <div class="skill-card">
 
-    overflow: hidden;
+                        <h3>
+                            Technical Support
+                        </h3>
 
-}
+                        <p>
+                            Troubleshooting, issue resolution,
+                            documentation and system support.
+                        </p>
 
+                    </div>
 
-.hero::after {
 
-    content: "";
+                    <div class="skill-card">
 
-    position: absolute;
+                        <h3>
+                            DevOps
+                        </h3>
 
-    width: 420px;
+                        <p>
+                            Linux, Git, GitHub, Docker and
+                            deployment fundamentals.
+                        </p>
 
-    height: 420px;
+                    </div>
 
-    border: 1px solid #eeeeee;
 
-    border-radius: 50%;
+                    <div class="skill-card">
 
-    right: -180px;
+                        <h3>
+                            Programming
+                        </h3>
 
-    bottom: -150px;
+                        <p>
+                            Python, JavaScript and
+                            application development.
+                        </p>
 
-}
+                    </div>
 
 
-.hero-content {
+                    <div class="skill-card">
 
-    position: relative;
+                        <h3>
+                            Databases
+                        </h3>
 
-    z-index: 2;
+                        <p>
+                            SQL, MySQL and database
+                            management fundamentals.
+                        </p>
 
-}
+                    </div>
 
 
-.small-heading {
+                    <div class="skill-card">
 
-    font-family: "DM Mono", monospace;
+                        <h3>
+                            Web Development
+                        </h3>
 
-    font-size: .68rem;
+                        <p>
+                            HTML, CSS, JavaScript and
+                            responsive web development.
+                        </p>
 
-    color: var(--red);
+                    </div>
 
-    letter-spacing: 2px;
 
-    margin-bottom: 25px;
+                    <div class="skill-card">
 
-}
+                        <h3>
+                            Machine Learning
+                        </h3>
 
+                        <p>
+                            Python, NLP, Scikit-learn
+                            and classification techniques.
+                        </p>
 
-.hero h1 {
+                    </div>
 
-    font-size: clamp(4rem, 9vw, 8rem);
 
-    line-height: .9;
+                </div>
 
-    letter-spacing: -6px;
+            </div>
 
-    font-weight: 700;
+        </section>
 
-}
 
+        <!-- ================= PROJECTS ================= -->
 
-.hero h1 span {
+        <section class="section section-light" id="projects">
 
-    display: block;
+            <div class="container">
 
-    color: transparent;
+                <p class="section-label">
+                    04 — PROJECTS
+                </p>
 
-    -webkit-text-stroke: 1px var(--text);
+                <h2 class="section-title">
+                    Selected Projects
+                </h2>
 
-}
 
+                <div class="projects">
 
-.hero-description {
 
-    max-width: 650px;
+                    <!-- PROJECT 1 -->
 
-    margin-top: 30px;
+                    <article class="project">
 
-    font-size: 1.05rem;
+                        <div class="project-number">
+                            01
+                        </div>
 
-    color: var(--muted);
+                        <div class="project-content">
 
-    line-height: 1.8;
+                            <h3>
+                                Globe Guide
+                            </h3>
 
-}
+                            <p>
+                                AI-powered travel planning application
+                                providing personalized recommendations,
+                                route optimization and map integration.
+                            </p>
 
+                            <div class="tags">
 
-.hero-buttons {
+                                <span>Python</span>
 
-    display: flex;
+                                <span>Flutter</span>
 
-    gap: 12px;
+                                <span>MySQL</span>
 
-    margin-top: 35px;
+                                <span>Google Maps API</span>
 
-}
+                            </div>
 
+                            <a
+                                href="#"
+                                class="project-link"
+                            >
+                                View Project →
+                            </a>
 
-.button {
+                        </div>
 
-    display: inline-block;
+                    </article>
 
-    padding: 13px 20px;
 
-    background: var(--black);
+                    <!-- PROJECT 2 -->
 
-    color: white;
+                    <article class="project">
 
-    font-size: .72rem;
+                        <div class="project-number">
+                            02
+                        </div>
 
-    font-weight: 600;
+                        <div class="project-content">
 
-    text-transform: uppercase;
+                            <h3>
+                                NL2SQL
+                            </h3>
 
-    letter-spacing: 1px;
+                            <p>
+                                Natural language to SQL system designed
+                                to convert user questions into database
+                                queries.
+                            </p>
 
-    transition: .2s;
+                            <div class="tags">
 
-}
+                                <span>Python</span>
 
+                                <span>SQL</span>
 
-.button:hover {
+                                <span>NLP</span>
 
-    background: var(--red);
+                                <span>LLM</span>
 
-}
+                            </div>
 
+                            <a
+                                href="#"
+                                class="project-link"
+                            >
+                                View Project →
+                            </a>
 
-.button-outline {
+                        </div>
 
-    background: transparent;
+                    </article>
 
-    color: var(--text);
 
-    border: 1px solid var(--border);
+                    <!-- PROJECT 3 -->
 
-}
+                    <article class="project">
 
+                        <div class="project-number">
+                            03
+                        </div>
 
-.button-outline:hover {
+                        <div class="project-content">
 
-    background: var(--black);
+                            <h3>
+                                Spam Classifier
+                            </h3>
 
-    color: white;
+                            <p>
+                                Machine learning application for
+                                identifying spam messages using
+                                NLP and classification techniques.
+                            </p>
 
-}
+                            <div class="tags">
 
+                                <span>Python</span>
 
-/* ================= SECTIONS ================= */
+                                <span>NLP</span>
 
-.section {
+                                <span>Scikit-learn</span>
 
-    padding: 120px 0;
+                                <span>Streamlit</span>
 
-}
+                            </div>
 
+                            <a
+                                href="#"
+                                class="project-link"
+                            >
+                                View Project →
+                            </a>
 
-.section-light {
+                        </div>
 
-    background: var(--off-white);
+                    </article>
 
-}
 
+                    <!-- PROJECT 4 -->
 
-.section-label {
+                    <article class="project">
 
-    font-family: "DM Mono", monospace;
+                        <div class="project-number">
+                            04
+                        </div>
 
-    font-size: .68rem;
+                        <div class="project-content">
 
-    color: var(--red);
+                            <h3>
+                                Lamora
+                            </h3>
 
-    letter-spacing: 1.5px;
+                            <p>
+                                Operational intelligence platform focused
+                                on organizing information and improving
+                                operational workflows.
+                            </p>
 
-    margin-bottom: 40px;
+                            <div class="tags">
 
-}
+                                <span>Python</span>
 
+                                <span>FastAPI</span>
 
-.section-title {
+                                <span>Docker</span>
 
-    font-size: clamp(2.8rem, 6vw, 5rem);
+                                <span>GitHub</span>
 
-    line-height: .95;
+                            </div>
 
-    letter-spacing: -3px;
+                            <a
+                                href="https://github.com/diniyaskariachan2233/Lamora"
+                                target="_blank"
+                                class="project-link"
+                            >
+                                GitHub →
+                            </a>
 
-    margin-bottom: 65px;
+                        </div>
 
-}
+                    </article>
 
 
-/* ================= ABOUT ================= */
+                </div>
 
-.about-grid {
+            </div>
 
-    display: grid;
+        </section>
 
-    grid-template-columns: 1fr 1fr;
 
-    gap: 100px;
+        <!-- ================= CERTIFICATIONS ================= -->
 
-}
+        <section class="section" id="certifications">
 
+            <div class="container">
 
-.about-grid h2 {
+                <p class="section-label">
+                    05 — CREDENTIALS
+                </p>
 
-    font-size: clamp(2.8rem, 5vw, 5rem);
+                <h2 class="section-title">
+                    Certifications & Licenses
+                </h2>
 
-    line-height: .95;
 
-    letter-spacing: -4px;
+                <div class="certifications">
 
-}
 
+                    <!-- CERTIFICATE 1 -->
 
-.about-grid h2 span {
+                    <article class="certificate">
 
-    color: var(--red);
+                        <p class="certificate-number">
+                            01
+                        </p>
 
-}
+                        <h3>
+                            Explore Emerging Tech
+                        </h3>
 
+                        <p class="issuer">
+                            IBM
+                        </p>
 
-.about-text {
+                        <p class="date">
+                            October 2024
+                        </p>
 
-    color: var(--muted);
+                        <a
+                            href="#"
+                            target="_blank"
+                            class="certificate-link"
+                        >
+                            Verify Credential →
+                        </a>
 
-    max-width: 600px;
+                    </article>
 
-}
 
+                    <!--
+                    COPY THIS CARD FOR YOUR
+                    OTHER CERTIFICATES
+                    -->
 
-.about-text p {
 
-    margin-bottom: 20px;
+                    <article class="certificate">
 
-}
+                        <p class="certificate-number">
+                            02
+                        </p>
 
+                        <h3>
+                            ADD YOUR CERTIFICATE
+                        </h3>
 
-/* ================= EXPERIENCE ================= */
+                        <p class="issuer">
+                            Issuing Organization
+                        </p>
 
-.experience-list {
+                        <p class="date">
+                            Issue Date
+                        </p>
 
-    border-top: 1px solid var(--border);
+                        <a
+                            href="#"
+                            class="certificate-link"
+                        >
+                            Verify Credential →
+                        </a>
 
-}
+                    </article>
 
 
-.experience {
+                </div>
 
-    display: grid;
+            </div>
 
-    grid-template-columns: 160px 1fr;
+        </section>
 
-    gap: 50px;
 
-    padding: 45px 0;
+        <!-- ================= EDUCATION ================= -->
 
-    border-bottom: 1px solid var(--border);
+        <section class="section section-light">
 
-}
+            <div class="container">
 
+                <p class="section-label">
+                    06 — EDUCATION
+                </p>
 
-.experience-date {
+                <div class="education">
 
-    font-family: "DM Mono", monospace;
+                    <div>
 
-    font-size: .65rem;
+                        <p class="education-date">
+                            2021 — 2025
+                        </p>
 
-    color: var(--red);
+                        <h2>
+                            B.Tech Computer Science Engineering
+                        </h2>
 
-}
+                    </div>
 
+                    <p>
+                        KMCT Engineering College for Women
+                    </p>
 
-.experience h3 {
+                </div>
 
-    font-size: 1.6rem;
+            </div>
 
-    margin-bottom: 5px;
+        </section>
 
-}
 
+        <!-- ================= CONTACT ================= -->
 
-.experience h4 {
+        <section class="contact" id="contact">
 
-    color: var(--muted);
+            <div class="container">
 
-    font-weight: 400;
+                <p class="section-label">
+                    07 — CONTACT
+                </p>
 
-    margin-bottom: 18px;
+                <h2>
+                    Let's connect.
+                </h2>
 
-}
+                <p>
+                    I am open to opportunities in Technical Support,
+                    DevOps, Software Development and IT Operations.
+                </p>
 
+                <div class="contact-links">
 
-.experience p {
+                    <a
+                        href="https://www.linkedin.com/in/diniya-skariachan/"
+                        target="_blank"
+                    >
+                        LinkedIn ↗
+                    </a>
 
-    max-width: 700px;
+                    <a
+                        href="https://github.com/diniyaskariachan2233"
+                        target="_blank"
+                    >
+                        GitHub ↗
+                    </a>
 
-    color: var(--muted);
+                    <!-- Replace with your actual email -->
+                    <a href="mailto:YOUR_EMAIL@example.com">
+                        Email ↗
+                    </a>
 
-}
+                </div>
 
+            </div>
 
-.tags {
+        </section>
 
-    display: flex;
 
-    flex-wrap: wrap;
+    </main>
 
-    gap: 7px;
 
-    margin-top: 20px;
+    <!-- ================= FOOTER ================= -->
 
-}
+    <footer>
 
+        <div class="container footer">
 
-.tags span {
+            <span>
+                © 2026 Diniya Skariachan
+            </span>
 
-    padding: 6px 9px;
+            <span>
+                Software · Technical Support · DevOps
+            </span>
 
-    border: 1px solid var(--border);
+        </div>
 
-    font-family: "DM Mono", monospace;
+    </footer>
 
-    font-size: .58rem;
 
-    color: var(--muted);
+    <script src="index.js"></script>
 
-}
+</body>
 
-
-/* ================= SKILLS ================= */
-
-.skills-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    border-top: 1px solid var(--border);
-
-    border-left: 1px solid var(--border);
-
-}
-
-
-.skill-card {
-
-    padding: 35px;
-
-    min-height: 190px;
-
-    border-right: 1px solid var(--border);
-
-    border-bottom: 1px solid var(--border);
-
-    transition: .2s;
-
-}
-
-
-.skill-card:hover {
-
-    background: var(--off-white);
-
-    border-color: #c7c7c7;
-
-}
-
-
-.skill-card h3 {
-
-    margin-bottom: 15px;
-
-    font-size: 1.05rem;
-
-}
-
-
-.skill-card p {
-
-    color: var(--muted);
-
-    font-size: .88rem;
-
-}
-
-
-/* ================= PROJECTS ================= */
-
-.projects {
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 20px;
-
-}
-
-
-.project {
-
-    padding: 35px;
-
-    border: 1px solid var(--border);
-
-    min-height: 330px;
-
-    transition: .25s;
-
-}
-
-
-.project:hover {
-
-    border-color: var(--red);
-
-    transform: translateY(-4px);
-
-}
-
-
-.project-number {
-
-    font-family: "DM Mono", monospace;
-
-    color: var(--red);
-
-    font-size: .65rem;
-
-}
-
-
-.project h3 {
-
-    font-size: 1.7rem;
-
-    margin-top: 45px;
-
-}
-
-
-.project p {
-
-    color: var(--muted);
-
-    margin-top: 15px;
-
-    max-width: 500px;
-
-}
-
-
-.project-link {
-
-    display: inline-block;
-
-    margin-top: 25px;
-
-    font-size: .75rem;
-
-    font-weight: 600;
-
-}
-
-
-.project-link:hover {
-
-    color: var(--red);
-
-}
-
-
-/* ================= CERTIFICATIONS ================= */
-
-.certifications {
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 20px;
-
-}
-
-
-.certificate {
-
-    border: 1px solid var(--border);
-
-    padding: 35px;
-
-    min-height: 250px;
-
-    position: relative;
-
-}
-
-
-.certificate-number {
-
-    color: var(--red);
-
-    font-family: "DM Mono", monospace;
-
-    font-size: .65rem;
-
-}
-
-
-.certificate h3 {
-
-    margin-top: 45px;
-
-    font-size: 1.4rem;
-
-}
-
-
-.issuer {
-
-    color: var(--muted);
-
-    margin-top: 7px;
-
-}
-
-
-.date {
-
-    font-family: "DM Mono", monospace;
-
-    font-size: .6rem;
-
-    color: var(--muted);
-
-    margin-top: 20px;
-
-}
-
-
-.certificate-link {
-
-    position: absolute;
-
-    bottom: 30px;
-
-    font-size: .7rem;
-
-    color: var(--red);
-
-}
-
-
-/* ================= EDUCATION ================= */
-
-.education {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 50px;
-
-    padding: 40px 0;
-
-    border-top: 1px solid var(--border);
-
-    border-bottom: 1px solid var(--border);
-
-}
-
-
-.education-date {
-
-    color: var(--red);
-
-    font-family: "DM Mono", monospace;
-
-    font-size: .65rem;
-
-    margin-bottom: 10px;
-
-}
-
-
-.education h2 {
-
-    font-size: 2rem;
-
-}
-
-
-.education > p {
-
-    color: var(--muted);
-
-}
-
-
-/* ================= CONTACT ================= */
-
-.contact {
-
-    padding: 140px 0;
-
-}
-
-
-.contact h2 {
-
-    font-size: clamp(4rem, 8vw, 8rem);
-
-    letter-spacing: -6px;
-
-    line-height: .85;
-
-}
-
-
-.contact > .container > p:not(.section-label) {
-
-    color: var(--muted);
-
-    margin-top: 30px;
-
-    max-width: 600px;
-
-}
-
-
-.contact-links {
-
-    display: flex;
-
-    gap: 30px;
-
-    margin-top: 30px;
-
-}
-
-
-.contact-links a {
-
-    font-size: .8rem;
-
-    font-weight: 600;
-
-    border-bottom: 1px solid var(--text);
-
-    padding-bottom: 5px;
-
-}
-
-
-.contact-links a:hover {
-
-    color: var(--red);
-
-    border-color: var(--red);
-
-}
-
-
-/* ================= FOOTER ================= */
-
-footer {
-
-    border-top: 1px solid var(--border);
-
-    padding: 25px 0;
-
-    font-family: "DM Mono", monospace;
-
-    font-size: .6rem;
-
-    color: var(--muted);
-
-}
-
-
-.footer {
-
-    display: flex;
-
-    justify-content: space-between;
-
-}
-
-
-/* ================= RESPONSIVE ================= */
-
-@media (max-width: 800px) {
-
-    nav {
-
-        display: none;
-
-    }
-
-
-    .about-grid {
-
-        grid-template-columns: 1fr;
-
-        gap: 40px;
-
-    }
-
-
-    .skills-grid {
-
-        grid-template-columns: 1fr 1fr;
-
-    }
-
-
-    .projects,
-
-    .certifications {
-
-        grid-template-columns: 1fr;
-
-    }
-
-
-    .experience {
-
-        grid-template-columns: 1fr;
-
-        gap: 15px;
-
-    }
-
-
-    .education {
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
-    }
-
-}
-
-
-@media (max-width: 550px) {
-
-    .container {
-
-        width: 90%;
-
-    }
-
-
-    .hero h1 {
-
-        font-size: 4rem;
-
-        letter-spacing: -3px;
-
-    }
-
-
-    .skills-grid {
-
-        grid-template-columns: 1fr;
-
-    }
-
-
-    .hero-buttons {
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
-    }
-
-
-    .contact h2 {
-
-        font-size: 4rem;
-
-    }
-
-
-    .footer {
-
-        flex-direction: column;
-
-        gap: 10px;
-
-    }
-
-}
+</html>
