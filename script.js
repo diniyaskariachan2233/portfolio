@@ -1,79 +1,62 @@
-// Smooth reveal animation
+// ==============================
+// SMOOTH SCROLL
+// ==============================
 
-const revealElements = document.querySelectorAll(
-  ".section, .project-card, .skill-card, .certificate-card, .experience-card"
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+    link.addEventListener("click", function(event) {
+
+        const target = document.querySelector(
+            this.getAttribute("href")
+        );
+
+        if (target) {
+
+            event.preventDefault();
+
+            target.scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }
+
+    });
+
+});
+
+
+// ==============================
+// SIMPLE SCROLL REVEAL
+// ==============================
+
+const elements = document.querySelectorAll(
+    ".section, .experience, .skill, .project, .certificate"
 );
 
 const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = "1";
-        entry.target.style.transform = "translateY(0)";
-      }
-    });
-  },
-  {
-    threshold: 0.08
-  }
+    entries => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("visible");
+
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.1
+    }
 );
 
 
-// Apply initial animation state
+elements.forEach(element => {
 
-revealElements.forEach((element) => {
-  element.style.opacity = "0";
-  element.style.transform = "translateY(30px)";
-  element.style.transition =
-    "opacity 0.7s ease, transform 0.7s ease";
+    element.classList.add("reveal");
 
-  observer.observe(element);
-});
-
-
-// Navbar active section indicator
-
-const sections = document.querySelectorAll("section[id]");
-const navLinks = document.querySelectorAll(".nav-links a");
-
-window.addEventListener("scroll", () => {
-
-  let currentSection = "";
-
-  sections.forEach((section) => {
-
-    const sectionTop = section.offsetTop;
-
-    if (window.scrollY >= sectionTop - 200) {
-      currentSection = section.getAttribute("id");
-    }
-
-  });
-
-
-  navLinks.forEach((link) => {
-
-    link.style.color = "";
-
-    if (link.getAttribute("href") === `#${currentSection}`) {
-      link.style.color = "#ffffff";
-    }
-
-  });
+    observer.observe(element);
 
 });
-
-
-// Telemetry status effect
-
-const liveStatus = document.querySelector(".live");
-
-setInterval(() => {
-
-  if (liveStatus.style.opacity === "0.4") {
-    liveStatus.style.opacity = "1";
-  } else {
-    liveStatus.style.opacity = "0.4";
-  }
-
-}, 800);
