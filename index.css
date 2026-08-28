@@ -128,3 +128,58 @@ body {
 
 .project-number {
     font-family: 'DM Mono', monospace;
+    font-size: 1rem;
+    color: var(--muted);
+}
+
+.project-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.project-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.project-content p {
+    font-size: 0.9rem;
+    color: #444444;
+    margin-bottom: 15px;
+}
+
+.project-details {
+    margin-top: 18px;
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: var(--muted);
+}
+
+.project-content .project-link {
+    margin-top: auto;
+    padding-top: 25px;
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.project-content .project-link:hover {
+    text-decoration: underline;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+@media (max-width: 600px) {
+    .experience {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
