@@ -993,3 +993,34 @@ footer {
     }
 
 }
+
+
+```css
+/* ================= FEATURED CERTIFICATION ================= */
+
+.certificate.featured {
+
+    border-top: 3px solid var(--red);
+
+}
+
+.certificate.featured h3 {
+
+    font-size: 1.6rem;
+
+}
+
+.certificate.featured .tags {
+
+    margin-top: 25px;
+
+}
+
+.certificate.featured .tags span {
+
+    color: var(--text);
+
+    border-color: var(--text);
+
+}
+```
