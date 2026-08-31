@@ -1,217 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio — Technical Ops & Software Engineer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | DevOps & Systems Engineer</title>
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: rgba(30, 41, 59, 0.5);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --primary: #38bdf8;
+      --secondary: #818cf8;
+      --accent: #34d399;
+      --text: #f8fafc;
+      --text-dim: #94a3b8;
+    }
 
-    <section class="section section-light" id="experience">
-        <div class="container">
-            <p class="section-label">02 — EXPERIENCE</p>
-            <h2 class="section-title">Work Experience</h2>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(56, 189, 248, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 85% 75%, rgba(129, 140, 248, 0.12) 0%, transparent 40%);
+      background-attachment: fixed;
+    }
 
-            <div class="experience-list">
+    .container {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
 
-                <article class="experience">
-                    <div class="experience-date">
-                        OCT 2025 — PRESENT
-                    </div>
-                    <div>
-                        <h3>Technical Ops</h3>
-                        <h4>Nissi Computing Labs LLP — India</h4>
-                        <p class="experience-location">Bengaluru, Karnataka · On-site</p>
-                        <p>
-                            Working in Technical Operations with exposure to technical support, software environments, system configuration, troubleshooting and operational workflows.
-                        </p>
-                        <div class="tags">
-                            <span>Technical Support</span>
-                            <span>Technical Operations</span>
-                            <span>Troubleshooting</span>
-                            <span>Software</span>
-                        </div>
-                    </div>
-                </article>
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      margin-bottom: 3rem;
+      border-bottom: 1px solid var(--card-border);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
 
-                <article class="experience">
-                    <div class="experience-date">
-                        JUL 2025 — SEP 2025
-                    </div>
-                    <div>
-                        <h3>Executive Trainee</h3>
-                        <h4>STAR Innovators</h4>
-                        <p class="experience-location">Bengaluru, Karnataka · On-site</p>
-                        <p>
-                            Gained hands-on exposure to technical training, software tools, system setup and configuration, troubleshooting and technology-driven operational processes.
-                        </p>
-                        <div class="tags">
-                            <span>Technical Operations</span>
-                            <span>Software Support</span>
-                            <span>Troubleshooting</span>
-                            <span>System Configuration</span>
-                        </div>
-                    </div>
-                </article>
+    .logo {
+      font-weight: 800;
+      font-size: 1.2rem;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-                <article class="experience">
-                    <div class="experience-date">
-                        JAN 2025 — MAR 2025
-                    </div>
-                    <div>
-                        <h3>Intern</h3>
-                        <h4>RISS Technologies</h4>
-                        <p class="experience-location">Kozhikode, Kerala · Hybrid</p>
-                        <p>
-                            Completed foundational Python development along with project work involving Flutter, MongoDB, Python, React and Node.js.
-                        </p>
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>Flutter</span>
-                            <span>MongoDB</span>
-                            <span>React</span>
-                            <span>Node.js</span>
-                        </div>
-                    </div>
-                </article>
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
 
-                <article class="experience">
-                    <div class="experience-date">
-                        AUG 2024 — FEB 2025
-                    </div>
-                    <div>
-                        <h3>Research Assistant</h3>
-                        <h4>Extem Education</h4>
-                        <p class="experience-location">Calicut · On-site</p>
-                        <p>
-                            Contributed to research and development activities, supporting technology-oriented projects and problem-solving tasks.
-                        </p>
-                        <div class="tags">
-                            <span>Research</span>
-                            <span>Development</span>
-                            <span>Problem Solving</span>
-                        </div>
-                    </div>
-                </article>
+    .nav-links a {
+      color: var(--text-dim);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+    }
 
-            </div>
-        </div>
-    </section>
+    .nav-links a:hover { color: var(--primary); }
 
-    <section class="section section-light" id="projects">
-        <div class="container">
-            <p class="section-label">04 — PROJECTS</p>
-            <h2 class="section-title">Selected Projects</h2>
+    /* Hero Section */
+    .hero {
+      padding: 3rem 0;
+      animation: fadeIn 1s ease-in-out;
+    }
 
-            <div class="projects">
-
-                <article class="project">
-                    <div class="project-number">01</div>
-                    <div class="project-content">
-                        <h3>Lamora</h3>
-                        <p>
-                            Operational intelligence platform designed to organize operational information, identify issues and support structured decision-making through software-driven workflows.
-                        </p>
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>FastAPI</span>
-                            <span>REST API</span>
-                            <span>Docker</span>
-                            <span>GitHub</span>
-                        </div>
-                        <a href="https://github.com/diniyaskariachan2233/Lamora" target="_blank" rel="noopener noreferrer" class="project-link">
-                            View on GitHub →
-                        </a>
-                    </div>
-                </article>
-
-                <article class="project">
-                    <div class="project-number">02</div>
-                    <div class="project-content">
-                        <h3>NL2SQL</h3>
-                        <p>
-                            Natural Language to SQL tool that converts user questions into SQL queries based on database schemas. The system supports data retrieval involving filters, aggregates and multi-table joins.
-                        </p>
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>SQL</span>
-                            <span>NLP</span>
-                            <span>LLM</span>
-                            <span>Google Colab</span>
-                        </div>
-                        <a href="https://colab.research.google.com/drive/1pOHEkBnv7CwBfYFB_IZ3mejzQksK7C-6?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link">
-                            Open Google Colab →
-                        </a>
-                    </div>
-                </article>
-
-                <article class="project">
-                    <div class="project-number">03</div>
-                    <div class="project-content">
-                        <h3>Globe Guide</h3>
-                        <p>
-                            AI-powered travel planning application designed to provide personalized destination recommendations, optimized routes and an interactive travel-planning experience.
-                        </p>
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>Flutter</span>
-                            <span>MySQL</span>
-                            <span>Google Maps API</span>
-                            <span>Dijkstra's Algorithm</span>
-                        </div>
-                        <p class="project-details">
-                            Backend development with Python and MySQL, REST-style GET and POST operations, recommendation algorithms, sentiment analysis and route optimization. Mobile development was implemented using Flutter and Android Studio.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="project">
-                    <div class="project-number">04</div>
-                    <div class="project-content">
-                        <h3>SMS Spam Classifier</h3>
-                        <p>
-                            Machine-learning based application designed to classify SMS messages as spam or legitimate using Natural Language Processing and multiple classification algorithms.
-                        </p>
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>Flask</span>
-                            <span>NLP</span>
-                            <span>TF-IDF</span>
-                            <span>Scikit-learn</span>
-                        </div>
-                        <p class="project-details">
-                            Implemented Random Forest, Naïve Bayes and Logistic Regression models with TF-IDF feature extraction. The application provides real-time message classification through a simple HTML and CSS interface.
-                        </p>
-                        <a href="https://github.com/diniyaskariachan2233/c" target="_blank" rel="noopener noreferrer" class="project-link">
-                            View on GitHub →
-                        </a>
-                    </div>
-                </article>
-
-                <article class="project">
-                    <div class="project-number">05</div>
-                    <div class="project-content">
-                        <h3>Fashion App</h3>
-                        <p>
-                            A software project focused on building a personalized fashion and shopping experience.
-                        </p>
-                        <div class="tags">
-                            <span>Software Development</span>
-                            <span>UI / UX</span>
-                            <span>Recommendation</span>
-                        </div>
-                        <a href="#" class="project-link">
-                            Project Details →
-                        </a>
-                    </div>
-                </article>
-
-            </div>
-        </div>
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(52, 211, 153, 0.1);
+      border: 1px solid rgba(52, 211, 153, 0.3);
+      color: var(--accent);
+      padding: 0.3rem 0.8rem;
+      border
     </section>
 
 </body>
